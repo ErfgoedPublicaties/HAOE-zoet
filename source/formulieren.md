@@ -189,6 +189,8 @@ zo alles bekijken wat de toepassing gevonden heeft voor je.
 
 ## Facetted Search. Een alternatief zoekformulier.
 
+![Het zoekformulier voor afbeeldingen in de beeldbank onroerend erfgoed](beeldbank_zoeken.png)
+
 *Het [zoekformulier voor
 afbeeldingen](https://beeldbank.onroerenderfgoed.be/images) in de beeldbank onroerend erfgoed*
 
@@ -197,4 +199,13 @@ alomtegenwoordig. Daarbuiten gebruiken we vaak een alternatief, de facetted
 search. Voornaamste verschil is dat je bij een dergelijk zoekformulier eerder
 iteratief te werk gaat. Bij het standaard zoekformulier zijn het zoekformulier
 en de resultatenlijst aparte pagina's. Bij facetted search zijn deze
-samengevoegd.
+samengevoegd en kies je steeds extra filters totdat je de resultaten hebt die
+je zoekt. Deze manier van zoeken is zeker niet uniek voor Onroerend Erfgoed en
+wordt ook vaak gebruikt op andere website, zoals webwinkels.
+
+Ook hier heb je de mogelijkheid om met meerdere zoekvelden te werken, full-text te 
+zoeken, resultaten te sorteren en door de pagina's met resultaten te bladeren. Net
+als bij het standaard zoekformulier. Ook hier tellen de basisregels: indien je twee
+zoekvelden combineert, dan gaat het om een EN combinatie, indien je twee waarden binnen 
+een zoekveld combineert, dan gaat het om een OF combinatie. Je kunt dus zoeken in de 
+Beeldbank naar [afbeeldingen uit *Knokke-Heist* OF *Brugge* EN genomen in *2004* of *2006*](https://beeldbank.onroerenderfgoed.be/images?text=&sort=-dates.original&searchFilter=&municipality=31005&municipality=31043&year=2006&year=2004).
