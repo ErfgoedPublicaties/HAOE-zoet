@@ -2,6 +2,8 @@
 
 ## Adresdata
 
+De volledige lijst van deelgemeenten kan je ook downloaden als open data en gebruiken in je eigen systemen {cite:p}`van_daele_deelgemeenten_2021`.
+
 ## Thesauri
 
 Een thesaurus is een gestructureerde begrippenlijst die gebruikt wordt om
