@@ -198,14 +198,53 @@ Binnen de inventaris onroerend erfgoed is het standaard zoekformulier
 alomtegenwoordig. Daarbuiten gebruiken we vaak een alternatief, de facetted
 search. Voornaamste verschil is dat je bij een dergelijk zoekformulier eerder
 iteratief te werk gaat. Bij het standaard zoekformulier zijn het zoekformulier
-en de resultatenlijst aparte pagina's. Bij facetted search zijn deze
+en de resultatenlijst aparte webpagina's. Bij facetted search zijn deze
 samengevoegd en kies je steeds extra filters totdat je de resultaten hebt die
 je zoekt. Deze manier van zoeken is zeker niet uniek voor Onroerend Erfgoed en
 wordt ook vaak gebruikt op andere website, zoals webwinkels.
 
-Ook hier heb je de mogelijkheid om met meerdere zoekvelden te werken, full-text te 
-zoeken, resultaten te sorteren en door de pagina's met resultaten te bladeren. Net
-als bij het standaard zoekformulier. Ook hier tellen de basisregels: indien je twee
-zoekvelden combineert, dan gaat het om een EN combinatie, indien je twee waarden binnen 
-een zoekveld combineert, dan gaat het om een OF combinatie. Je kunt dus zoeken in de 
-Beeldbank naar [afbeeldingen uit *Knokke-Heist* OF *Brugge* EN genomen in *2004* of *2006*](https://beeldbank.onroerenderfgoed.be/images?text=&sort=-dates.original&searchFilter=&municipality=31005&municipality=31043&year=2006&year=2004).
+Bij Facetted Search heb je ook weer de mogelijkheid om met meerdere zoekvelden 
+te werken, full-text te zoeken, resultaten te sorteren en door de pagina's met 
+resultaten te bladeren. Net als bij het standaard zoekformulier. Ook hier tellen
+de basisregels: indien je twee zoekvelden combineert, dan gaat het om een EN 
+combinatie, indien je twee waarden binnen een zoekveld combineert, dan gaat het 
+om een OF combinatie. Je kunt dus zoeken in de Beeldbank naar
+[afbeeldingen uit *Knokke-Heist* OF *Brugge* EN genomen in *2004* of *2006*](https://beeldbank.onroerenderfgoed.be/images?text=&sort=-dates.original&searchFilter=&municipality=31005&municipality=31043&year=2006&year=2004).
+
+![Het zoekformulier voor eindverslagen archeologie met de archeoloog ingevuld en de lijst van gemeenten opgeklapt](eindverslagen_zoeken.png)
+
+*Het [zoeformulier voor eindverslagen archeologie](https://loket.onroerenderfgoed.be/archeologie/rapporten/eindverslagen) waarbij naar een archeoloog gezocht wordt op naam en de gemeente kan gekozen worden via een facet.*
+
+Facetted search toepassen op een veld waarvan je weet dat elke waarde uniek is of 
+slechts héél weinig voorkomt is onhandig. Dat leidt tot ellenlange uitklaplijsten 
+waarin je verplicht moet gaan zoeken naar die ene waarde die jou interesseer. Net 
+hetzelfde probleem stelt zich bij een zoekveld waarin héél veel verschillende waarden 
+voorkomen. Hiervoor hebben we een aantal oplossing. Soms lossen we dit op door voor 
+een zoekparameter een klassiek veld te voorzien in plaats van de typische uitklaplijst 
+die bij een facet hoort. Zo kan je bij de [eindverslagen archeologie](https://loket.onroerenderfgoed.be/archeologie/rapporten/eindverslagen)
+zoeken naar een verslag met een specifiek ID of Projectcode via een klassiek veld
+waarin je vrij bent in te voeren wat je wenst. Voor deze velden is er geen andere
+zinvolle oplossing aangezien het ID uniek is en de Projectcode dat ook meestal is.
+
+*Filteren van het gemeentefacet op de beeldbank*
+
+Een andere techniek die we toepassen is het voorzien van een extra veld waarin je
+de lijst van waarden binnen één facet snel kunt doorzoeken. Dit passen we regelmatig 
+toe op een gemeente filter. Dit facet kan soms maar een heel klein aantal unieke 
+waarden bevatten, maar soms moeten er 300 gemeenten getoond worden. In dat geval
+is het niet evident om die ene gemeente die je zoekt te vinden in de uitklaplijst.
+Daarom voorzien we een tektsveld waarmee je de lijst weer snel kunt doorzoeken.
+
+Of we een standaard zoekformulier bouwen of een facetted search hangt af van een 
+aantal factoren. In de eerste plaats, de dataset die we doorzoekbaar willen maken 
+en de benodigde zoekparameters. Facetted search werkt goed voor de datasets waar 
+we een relatief beperkt aantal filters hebben en waarbij elke filter een beperkt 
+aantal mogelijke waarden heeft. Verwerken van een zoekveld dat aangestuurd wordt 
+door een thesaurus of andere complexere logica is moeilijk. Daarnaast speelt de 
+doelgroep waarop we mikken ook een rol. De doorsnee gebruiker lijkt een facetted
+search te verkiezen omdat het intuïtieve aanvoelt. Het standaard zoekformulier 
+heeft dan echter weer mogelijkheden voor complexere zoekfilters die een facetted
+niet heeft. Het blijft dus steeds een afweging van voor- en nadelen van beide 
+systemen om tot een optimale keuze te komen. Niets sluit uit dat we in de toekomst 
+voor bepaalde datasets andere keuzes maken of dat er nieuwe types zoekformulieren 
+ontstaan.
