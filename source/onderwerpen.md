@@ -34,7 +34,124 @@ zeggen over een geografische locatie, van een zeer nauwkeurige plaatsbepaling
 goed communiceren over locaties op een manier die wij makkelijk begrijpen 
 en toch niet al te veel van onze hersenen vraagt.
 
-De volledige lijst van deelgemeenten kan je ook downloaden als open data en gebruiken in je eigen systemen {cite:p}`van_daele_deelgemeenten_2021`.
+In onze toepassingen kan je courant de volgende types van plaatsaanduidingen
+aantreffen:
+
+**Provincie** Er kan meestal gezocht worden op de vijf Vlaamse provincies.
+Dit is een makkelijke manier om een grote set van zoekresultaten te beperken
+tot een behapbaar geografische gebied.
+
+**Gemeente** Bijna overal kan er op gemeente gezocht worden. Een zeer
+courante eenheid die voor veel mensen de eerste geografische filter is 
+die ze activeren. De lijst met gemeente in Vlaanderen wordt officieel 
+vastgelegd en kan enkel wijzigen als gevolg van fusies. In geval van een
+fusie worden alle databanken van Onroerend Erfgoed aangepast zodat enkel
+nog de nieuwe gemeenten gebruikt worden. Alle gegevens worden toegekend
+aan de nieuwe geldende grenzen.
+
+**Deelgemeente** Kan doorzocht worden in een aantal toepassingen, in de 
+eerste plaats de 
+[Inventaris Onroerend Erfgoed](https://inventaris.onroerenderfgoed.be).
+Er bestaat geen officiële lijst van deelgemeenten die geldt voor gans 
+Vlaanderen. Daarom heeft het agentschap een eigen lijst gemaakt met
+wat wij als deelgemeente beschouwen. Deze heeft buiten Onroerend Erfgoed
+geen toepassing en komt niet exact overeen met de postkantons, kadastrale 
+afdelingen, statistische sectoren of andere indelingen die elders 
+gebruikt worden. Ze moetvooral gezien worden als een lijst van historische 
+kernen die vandaag nog betekenisvol genoeg zijn en als context dienen 
+bij het ontstaan van onroerend erfgoed. Deelgemeenten hebben vandaag 
+geen invloed meer op correcte adressen (elk adres in Vlaanderen moet 
+uniek zijn in de volledige gemeente), maar ze helpen wel grip krijgen op
+het grondgebied van een gemeente, zekere de grotere landelijke gemeenten
+met veel heterogene kernen. Gelet op de huidige fusiegolven blijft het 
+gegeven dus interessant.
+
+```{note}
+
+De lijst van deelgemeenten zoals ze gebruikt wordt door Onroerend Erfgoed
+wordt ter beschikking gesteld aan derden als open data 
+{cite:p}`van_daele_deelgemeenten_2021` onder een [Creative Commons Attribution 
+4.0 International](https://creativecommons.org/licenses/by/4.0/) licentie. 
+Iedereen kan deze lijst downloaden en in zijn eigen informatiesystemen 
+of databanken integreren (mits naamsvermelding). De lijst wordt actief 
+onderhouden en bij elke gemeentefusie aangepast.
+```
+
+**Straat** Kan doorzocht worden in veel toepassingen. Dit is een 
+gecontroleerde lijst die wordt aangereikt door 
+[Digitaal Vlaanderen](https://www.vlaanderen.be/digitaal-vlaanderen), via 
+de webservices van het *CRAB* of het *Adressenregister*. Deze authentieke bron
+wordt beheerd door de lokale besturen. Werken met een centrale lijst 
+zorgt voor betere afstemming tussen informatiesystemen. Anders schrijft 
+de ene over het *Sint-Jacobsplein* terwijl de andere het over het 
+*St.-Jakobplein* heeft. Voor je het weet eindig je met gegevens die
+niet meer compatibel zijn. Een probleem dat nog héél vaak opduikt wanneer
+we adressen in oudere geschreven bronnen bekijken. Ook kleine databanken
+of Excel-lijsten die geen gebruik maken van officiële straatnamen zorgen
+vaak voor problemen wanneer we die trachten samen te voegen met andere
+databronnen. Je kan er dus zeker van zijn dat we in onze zoekformulieren
+steeds de officiële lijst met straatnamen in een gemeente aanbieden. Ook 
+hier volgen de straatnamen de fusies. Stel dat twee gemeenten die beiden
+een Kerkstraat hebben fusioneren, dan zal er in de fusiegemeente na de fusie
+exact één Kerkstraat overblijven. De andere straat krijgt een nieuwe naam, 
+die wij meteen toepassen in onze systemen. Indien je dus een object zoekt
+in zo'n straat die hernoemd werd, dan zoek je die onder de nieuwe naam. Vaak
+blijft er echter wel een spoor achter van een oude benaming in een
+beschrijvingsveld en kan je die naam nog vinden met full-text zoeken.
+
+**Huisnummer** Wordt meestal getoond, maar is niet rechtstreeks doorzoekbaar.
+Huisnummers zijn relatief simpele concepten met verregaande gevolgen. Omdat
+het potentieel voor verwarring en gemiste resultaten groot is, zoeken
+we meestal op straatnaam en bekijken dan de gevonden resultaten in plaats 
+van te zoeken op straat en huisnummer. Het is veel moeilijker om huisnummer
+actueel te houden dan straatnamen. Er zijn er veel meer dan de straatnamen 
+en ze wijzigen ook sneller. We beschikken meestal wel over een huisnummer
+ten tijde van de opmaak van een record, maar dat is niet noodzakelijk het
+huidige huisnummer. We mogen ook niet vergeten dat adressen geen unieke 
+identificatoren voor gebouwen zijn, maar aanduidingen van woonplaatsen van 
+personen of postadressen. Veel onroerend erfgoed zoals een wegkapel, een 
+bunker, een dreef of een pomp op een dorpsplain heeft dan ook helemaal 
+geen huisnummer. Daarnaast is er ook onroerend erfgoed dat 
+zo groot is dat adressen betekenisloos worden. Een ankerplaats of 
+stadsgezicht identificeren aan de hand van al zijn deeluitmakende adressen 
+is een gigantisch karwei met weinig meerwaarde. Dit schaalprobleem zie je 
+ook al met iets complexere bouwkundige gehelen zoals een straatwand, 
+een beluik of een samenstel van huizen. Vaak worden deze aangeduid met 
+adresreeksen. Zo kan een straatwand aangeduid worden met de huisnummers 
+*1-9*, als afkorting voor huisnummers 1, 3, 5, 7 en 9. Als je dan 
+zoekt op huisnummer 5, dan is deze niet aanwezig in *1-9*, tenzij je daar 
+speciale logica voor inbouwt. In de praktijk zijn er dus meer nadelen dan 
+voordelen verbonden aan het tekstueel zoeken op adres en bieden we dit dus
+niet aan.
+
+```{note}
+
+**Is het echt helemaal niet mogelijk te zoeken op adres?**
+
+Indien je toch heel erg gericht wil zoeken op adres, dan zijn er toch enkele
+mogelijkheden:
+
+- Ga naar het [Geoportaal](https://geo.onroerenderfgoed.be) en tik het 
+adres in de zoekbalk in. Indien je een geldig adres ingeeft, zal de toepassing
+zoomen naar de locatie van het adres. Je ziet meteen wat er op die plaats
+ligt en met een muisklik krijg je meer info over de objecten die je er
+aantreft. Indien het gaat om een perceel, kan je zelfs een *Perceelrapport* 
+downloaden met alle erfgoeddata van die plaats. Makkelijk om bij te houden
+of zelf af te drukken.
+- Indien je zelf wat programmeerervaring hebt, kan je de bovenstaande handeling
+zelf uitvoeren en indien nodig aanpassen. Daarvoor gebruik je de 
+[GeoLocation service](https://loc.geopunt.be/Help/V4) 
+van Digitaal Vlaanderen om een adres te georefereren en de 
+[Geozoekdiensten service](https://geo.onroerenderfgoed.be/zoekdiensten/api_doc) 
+van Onroerend Erfgoed om het erfgoed op die locatie op te zoeken. Hoe je 
+dit concreet kunt uitvoeren in Python kan je leren via een
+[Jupyter Notebook](https://github.com/OnroerendErfgoed/scriptorium/blob/v1.1.0/notebooks/10_heritage_by_address.ipynb)
+{cite:p}`van_daele_scriptorium_2022`.
+- Tenslotte zou je, terug met enige programmeerervaring, alle erfgoed een 
+bepaalde straat kunnen opvragen van de inventaris services en de resultaten 
+daarvan in een script kunnen vergelijken met het huisnummer dat je zoekt. We 
+zetten je daarvoor op weg via {cite:p}`van_daele_scriptorium_2022`.
+```
 
 ## Thesauri
 
