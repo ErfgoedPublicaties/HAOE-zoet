@@ -224,7 +224,9 @@ een zoekparameter een klassiek veld te voorzien in plaats van de typische uitkla
 die bij een facet hoort. Zo kan je bij de [eindverslagen archeologie](https://loket.onroerenderfgoed.be/archeologie/rapporten/eindverslagen)
 zoeken naar een verslag met een specifiek ID of Projectcode via een klassiek veld
 waarin je vrij bent in te voeren wat je wenst. Voor deze velden is er geen andere
-zinvolle oplossing aangezien het ID uniek is en de Projectcode dat ook meestal is.
+zinvolle oplossing aangezien het ID uniek is en de Projectcode dat ook meestal is.a
+
+![Het gemeentefacet verder doorzoeken in de beeldbank](beeldbank_filter_gemeente.png)
 
 *Filteren van het gemeentefacet op de beeldbank*
 
