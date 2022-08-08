@@ -34,6 +34,10 @@ zeggen over een geografische locatie, van een zeer nauwkeurige plaatsbepaling
 goed communiceren over locaties op een manier die wij makkelijk begrijpen 
 en toch niet al te veel van onze hersenen vraagt.
 
+![Zoeken naar erfgoedobjecten waarbij de straat Paul Fredericqstraat is, de deelgemeente Gent is, de gemeente Gent is en de provincie Oost-Vlaanderen is](inventaris_zoeken_locatie.png)
+
+*Zoeken naar erfgoedobjecten in de Paul Fredericqstraat te Gent*
+
 In onze toepassingen kan je courant de volgende types van plaatsaanduidingen
 aantreffen:
 
@@ -151,6 +155,7 @@ dit concreet kunt uitvoeren in Python kan je leren via een
 bepaalde straat kunnen opvragen van de inventaris services en de resultaten 
 daarvan in een script kunnen vergelijken met het huisnummer dat je zoekt. We 
 zetten je daarvoor op weg via {cite:p}`van_daele_scriptorium_2022`.
+
 ```
 
 ## Thesauri
@@ -164,6 +169,79 @@ weet welke begrippen gebruikt worden, welke de betekenis is van die begrippen
 en welke de relaties zijn tussen de begrippen {cite:p}`mortier_calling_2017`.
 
 Op onze [thesaurus website](https://thesaurus.onroerenderfgoed.be) kan je alle
-thesauri die Onroerend Erfgoed publiceert raadplegen.
+thesauri die Onroerend Erfgoed publiceert raadplegen. Elke thesaurus bestaat
+uit een hiërarchische lijst van concepten, elk met hun definitie en één of 
+meerdere labels. Indien een concept meerdere labels heeft, dan is er altijd exact 
+één label dat de voorkeur geniet voor een bepaalde taal. Thesauri kunnen dus 
+meertalig zijn. *Lanen* is ingesteld als een alternatieve naam voor [*dreven*](https://thesaurus.onroerenderfgoed.be/conceptschemes/ERFGOEDTYPES/c/128) 
+in het Nederlands.
 
+![De hiërarchie van dreven in de thesaurus van erfgoedtypes](thesaurus_dreven_boom.png)
+
+*De hiërarchie van dreven in de [thesaurus van erfgoedtypes](https://thesaurus.onroerenderfgoed.be/conceptschemes/ERFGOEDTYPES)*
+
+Elk concept heeft relaties met andere concepten. Door die relaties wordt er
+in de eerste plaats een hiërarchie gemaakt die aangeeft dat *dreven* een 
+soort *wegen* zijn, ingedeeld op basis van *vorm*, die dienen voor *landverkeer* 
+en eigenlijk onder *infrastructuur* vallen. Naast de hiërarchische relaties,
+zijn er soms ook lossere relaties. Zo kunnen we lezen dat [*abdijen*](https://id.erfgoed.net/thesauri/erfgoedtypes/4)
+gerelateerd zijn aan [*abdijhoeven*](https://id.erfgoed.net/thesauri/erfgoedtypes/5). 
+Immers, een abdij is geen abdijhoeve, maar heeft er wel vaak één. Stel dat je 
+op zoek bent naar extra informatie over abdijen, dan is interessant te weten 
+dat er iets zoals abdijhoeven bestaat en zetten we je op weg met meer informatie
+daarover.
+
+Er valt nog héél wat te vertellen over thesauri, maar we willen ons nu vooral
+toespitsen op hoe je ze tijdens een zoekactie kunt gebruiken. Op een
+zoekformulier zien ze er niet meteen heel erg anders uit dan gelijk welk
+andere keuzelijst, toch zijn ze veel krachtiger. Je hebt twee manieren om
+een concept te selecteren waarmee je wens te zoeken. Je kubt iets intikken 
+in het zoekveld. Je zoekterm wordt dan in de thesaurus gezocht en de 
+resultaten worden getoond. Indien ik dus *abd* intik, dan zie ik dat ik 
+zou kunnen zoeken naar *abdijenkerken*, *abdijhoeven*, *onderdelen van kloosters
+en abdijen*, *abdijen* of *abdijdomeinen*. Dit werkt vooral goed als ik
+al min of meer weet wat ik zoek. Deze zoekfunctie houdt zelfs rekening met
+de alternatieve labels van concepten. Als ik *lanen* intik, dan krijg ik het 
+concept *dreven* ook te zien omdat we in onze thesaurus hebben aangegeven dat 
+*lanen* een niet-voorkeursnaam zijn voor *dreven*. Indien ik niet meteen 
+de benaming ken voor het concept dat ik zoek, dan kan ik de volledige
+thesaurus doorbladeren. Daarvoor klik ik op het uiklapicoontje. Dan zie je alle
+topconcepten uit de thesaurus, die je met het plus-knopje steeds verder
+kunt openklappen. Zo kan je klikken op *gebouwen en structuren*, gevolgd 
+door *religieuze gebouwen en complexen* om ook weer bij *abdijen* uit
+te komen. Indien je dan op *zoeken* klikt, krijg je alle *abdijen* in de 
+inventaris Onroerend Erfgoed te zien. 
+
+Zoeken naar *abddijen* bij de erfgoedobjecten van de inventaris, komt
+neer op zoeken naar [alle erfgoedobjecten waaraan het concept *abdijen*
+is toegekend](https://inventaris.onroerenderfgoed.be/erfgoedobjecten?typologie=4). 
+Simpel, omdat *abdijen* in onze thesaurus boom een blad vormt. Mocht 
+de thesaurus een boom zijn, dan zitten de *abijden* op het einde van een tak.
+Er zijn geen specifiekere vormen van *abdijen*. Echter, bij de 
+[*kerken*](https://id.erfgoed.net/thesauri/erfgoedtypes/1005) het anders. Onder
+kerken zitten *katholieke*, *protestantse* en *orthodoxe kerken*. En op hun
+kennen die ook weer specifiekere vormen. Zo zijn er bij de *katholieke kerken*
+momenteel 9 subtypes, zoals *abdijkerken, *kloosterken*, *kathedralen* 
+en *parochiekerken*. Onze thesaurus maakt het mogelijk om zowel op een 
+specifiek type zoals *kathedralen* te zoeken, maar ook op een verzamelterm
+zoals *katholieke kerken*, *kerken* of zelfs het zeer algemene 
+*religieuze gebouwen en complexen*. Telkens je in het zoekformulier zoekt
+doormiddel van een thesaurus, zal de thesaurus jouw zoekterm analyseren 
+en indien nodig omzetten naar een verzameling van termen. Indien je zoekt
+op *kathedralen*, dan zijn er geen specifiekere concepten en zoek je dus
+exact op *kathedralen*. Indien je zoekt op *katholieke kerken*, dan zoek je
+naar alle erfgoedobjecten waaraan één van die 9 subtypes toegekend is of 
+naar de erfgoedobjecten waaraan rechtstreeks de verzamelterm 
+*katholieke kerken* toeekend werd. Indien je zoekt op *kerken*, dan zoek
+je naar alle erfgoedobjecten waaraan *katholieke kerken*, *orthodoxe kerken* 
+, *protestantste kerken* of één van hun subtypes of het algemene *kerken*
+toegekend zijn. Dat maakt natuurlijk dat hoe hoger je zoekterm in de 
+thesaurusboom staat, hoe meer resultaten je zult vinden. Er zijn weinig 
+*kathedralen* in Vlaanderen, maar veel *religieuze gebouwen en complexen*.
+
+Dit maakt van een thesaurus een heel krachtig zoekinstrument. Het is niet
+enkel een platte lijst van zoektermen waar je niet van kan afwijken, maar
+de zoektermen hebben ook nog eens inherente relaties die maken dat je 
+zoekactie veel intuïtievere resultaten oplevert dan wanneer je zonder 
+thesaurus zou werken.
 
