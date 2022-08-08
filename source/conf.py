@@ -64,6 +64,10 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_book_theme'
 
+#import oe_sphinx_theme
+#html_theme = 'oe_sphinx'
+#html_theme_path = [oe_sphinx_theme.get_theme_dir()]
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
@@ -96,22 +100,46 @@ latex_documents = [
 latex_maketitle = r'''
 \includepdf[pages=-]{./haoetest-1.pdf}
 \includepdf[pages=-]{./haoetest-2.pdf}
-\includepdf[pages=-]{./haoetest-3.pdf}
-\includepdf[pages=-]{./haoetest-4.pdf}
+\makeatletter
+\begin{titlepage}
+    \sphinxlogo
+    \py@HeaderFamily
+    \vspace*{\fill}
+    \centering
+    {\Huge \textcolor{OEpaars}{\textbf{\@title}} \par}
+    {\itshape\LARGE \py@release\releaseinfo \par}
+    \vfill
+    {\LARGE
+        \begin{tabular}[t]{c}
+            \textsc{\@author}
+        \end{tabular}\kern-\tabcolsep
+    \par}
+    \vfill\vfill
+    {\large
+        \@date \par
+        \vfill
+        \py@authoraddress \par
+    }%
+\end{titlepage}
 '''
 
 latex_extrapackages = r'''
 \usepackage{pdfpages}
 \usepackage{fontspec}
+\usepackage{xcolor}
 '''
 
 latex_preamble = r'''
 \setsansfont{FlandersArtSans-Regular}
+%\newcommand\asteriskfill{\leavevmode\xleaders\hbox{$\ast\ $}\hfill\kern0pt}
+\definecolor{OEpaars}{RGB}{117,63,127}
 '''
 
 latex_sphinxsetup = r'''%
 TitleColor={RGB}{117,63,127}%
 '''
+
+latex_logo = 'Entiteitslogo_3regels_kleur_0.eps'
 
 latex_elements = {
     'papersize': 'a4paper',
