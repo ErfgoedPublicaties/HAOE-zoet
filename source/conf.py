@@ -105,7 +105,7 @@ latex_maketitle = r'''
     \sphinxlogo
     \py@HeaderFamily
     \vspace*{\fill}
-    \centering
+    \begin{centering}
     {\Huge \textcolor{OEpaars}{\textbf{\@title}} \par}
     {\itshape\LARGE \py@release\releaseinfo \par}
     \vfill
@@ -120,6 +120,8 @@ latex_maketitle = r'''
         \vfill
         \py@authoraddress \par
     }%
+    \end{centering}
+    \includegraphics{Vlaanderen_is_erfgoed_naakt.eps}
 \end{titlepage}
 '''
 
@@ -130,7 +132,8 @@ latex_extrapackages = r'''
 '''
 
 latex_preamble = r'''
-\setsansfont{FlandersArtSans-Regular}
+%\setsansfont{FlandersArtSans-Regular}
+\setmainfont{Calibri}
 %\newcommand\asteriskfill{\leavevmode\xleaders\hbox{$\ast\ $}\hfill\kern0pt}
 \definecolor{OEpaars}{RGB}{117,63,127}
 '''
