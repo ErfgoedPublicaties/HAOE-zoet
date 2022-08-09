@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Handleiding Zoeken in Onroerend Erfgoed Toepassingen'
-copyright = '2022, Van Daele, Koen'
+copyright = '2022, Onroerend Erfgoed'
 author = 'Van Daele, Koen'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -91,15 +91,21 @@ bibtex_bibfiles = ['citaties.bib']
 
 latex_engine = 'xelatex'
 
+latex_use_xindy = True
+
 latex_documents = [
-    ('latexindex', 'zoeken.tex',
-    'Zoeken in Onroerend Erfgoed toepassingen',
-    'Onroerend Erfgoed', 'manual')
+    (
+        'latexindex',
+        'zoeken.tex',
+        'Zoeken in Onroerend Erfgoed toepassingen',
+        'Van Daele, Koen',
+        'manual'
+    )
 ]
 
 latex_maketitle = r'''
-\includepdf[pages=-]{./haoetest-1.pdf}
-\includepdf[pages=-]{./haoetest-2.pdf}
+\includepdf[pages=-]{./cover.pdf}
+\includepdf[pages=-]{./colofon.pdf}
 \makeatletter
 \begin{titlepage}
     \sphinxlogo
@@ -132,7 +138,7 @@ latex_extrapackages = r'''
 '''
 
 latex_preamble = r'''
-%\setsansfont{FlandersArtSans-Regular}
+\setsansfont{FlandersArtSans-Regular}
 \setmainfont{Calibri}
 %\newcommand\asteriskfill{\leavevmode\xleaders\hbox{$\ast\ $}\hfill\kern0pt}
 \definecolor{OEpaars}{RGB}{117,63,127}
@@ -144,6 +150,12 @@ TitleColor={RGB}{117,63,127}%
 
 latex_logo = 'Entiteitslogo_3regels_kleur_0.eps'
 
+latex_additional_files = [
+    'Vlaanderen_is_erfgoed_naakt.eps',
+    'cover.pdf',
+    'colofon.pdf'
+]
+
 latex_elements = {
     'papersize': 'a4paper',
     'pointsize': '11pt',
@@ -151,5 +163,6 @@ latex_elements = {
     'extrapackages': latex_extrapackages,
     'maketitle': latex_maketitle,
     'preamble': latex_preamble,
-    'sphinxsetup': latex_sphinxsetup
+    'sphinxsetup': latex_sphinxsetup,
+    'printindex': '\\footnotesize\\raggedright\\printindex'
 }

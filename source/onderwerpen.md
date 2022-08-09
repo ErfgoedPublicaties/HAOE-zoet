@@ -1,6 +1,16 @@
 # Het Onroerend Erfgoed datadomein
 
-## Adresdata
+De toepassingen die we bouwen hebben één voorname gemeenschappelijke delen, 
+ons onroerend erfgoed. Ze hebben allemaal betrekking op onroerend erfgoed, 
+resten van het verleden die ergens in Vlaanderen aangetroffen worden en die 
+willen beschrijven, bewaren en beheren. Het spreekt dan ook voor zich dat er
+bepaalde aspecten zijn die vaak terugkomen. Bijna al onze toepassingen 
+hebben te maken met de één of de andere vorm van locatie gebonden informatie.
+En vaak maken we gebruik van een thesaurus om gegevens te beschrijven. We 
+staan dan ook graag even stil bij een aantal onderwerpen die relevant zijn 
+als je vaak op zoek gaat naar informatie in onze systemen.
+
+## Locatiedata
 
 Onroerend erfgoed is, zoals het woord het zelf zegt, van nature gebonden 
 aan een locatie. Dit kan gaan van kleine locaties zoals één enkele boom of
@@ -45,6 +55,9 @@ aantreffen:
 Dit is een makkelijke manier om een grote set van zoekresultaten te beperken
 tot een behapbaar geografische gebied.
 
+```{index} gemeente
+```
+
 **Gemeente** Bijna overal kan er op gemeente gezocht worden. Een zeer
 courante eenheid die voor veel mensen de eerste geografische filter is 
 die ze activeren. De lijst met gemeente in Vlaanderen wordt officieel 
@@ -52,6 +65,9 @@ vastgelegd en kan enkel wijzigen als gevolg van fusies. In geval van een
 fusie worden alle databanken van Onroerend Erfgoed aangepast zodat enkel
 nog de nieuwe gemeenten gebruikt worden. Alle gegevens worden toegekend
 aan de nieuwe geldende grenzen.
+
+```{index} deelgemeente
+```
 
 **Deelgemeente** Kan doorzocht worden in een aantal toepassingen, in de 
 eerste plaats de 
@@ -81,6 +97,9 @@ of databanken integreren (mits naamsvermelding). De lijst wordt actief
 onderhouden en bij elke gemeentefusie aangepast.
 ```
 
+```{index} straat
+```
+
 **Straat** Kan doorzocht worden in veel toepassingen. Dit is een 
 gecontroleerde lijst die wordt aangereikt door 
 [Digitaal Vlaanderen](https://www.vlaanderen.be/digitaal-vlaanderen), via 
@@ -102,6 +121,15 @@ die wij meteen toepassen in onze systemen. Indien je dus een object zoekt
 in zo'n straat die hernoemd werd, dan zoek je die onder de nieuwe naam. Vaak
 blijft er echter wel een spoor achter van een oude benaming in een
 beschrijvingsveld en kan je die naam nog vinden met full-text zoeken.
+
+```{warning}
+
+Er is geen koppeling tussen de straten en de deelgemeenten. Aangezien de 
+deelgemeenten niet bestaan in het *CRAB* of *Adressenregister*, is het 
+onmogelijk te achterhalen in welke deelgemeente een straat ligt. Een straat
+kan ook in meerdere deelgemeenten liggen. Het is dan ook niet mogelijk om in
+een zoekformulier de lijst met straten te filteren op deelgemeente.
+```
 
 **Huisnummer** Wordt meestal getoond, maar is niet rechtstreeks doorzoekbaar.
 Huisnummers zijn relatief simpele concepten met verregaande gevolgen. Omdat
@@ -128,12 +156,17 @@ speciale logica voor inbouwt. In de praktijk zijn er dus meer nadelen dan
 voordelen verbonden aan het tekstueel zoeken op adres en bieden we dit dus
 niet aan.
 
-```{note}
+
+
+````{note}
 
 **Is het echt helemaal niet mogelijk te zoeken op adres?**
 
 Indien je toch heel erg gericht wil zoeken op adres, dan zijn er toch enkele
 mogelijkheden:
+
+```{index} geoportaal, geolocation, geozoekdiensten
+```
 
 - Ga naar het [Geoportaal](https://geo.onroerenderfgoed.be) en tik het 
 adres in de zoekbalk in. Indien je een geldig adres ingeeft, zal de toepassing
@@ -156,6 +189,20 @@ bepaalde straat kunnen opvragen van de inventaris services en de resultaten
 daarvan in een script kunnen vergelijken met het huisnummer dat je zoekt. We 
 zetten je daarvoor op weg via {cite:p}`van_daele_scriptorium_2022`.
 
+````
+
+Je kunt onze locatie-gebonden data dus vaak doorzoeken op provincie, gemeente,
+deelgemeente en straat. Niet elke combinatie is even nuttig of zinvol. Als je 
+wil zoeken naar iets in *Leuven*, hoef je niet nog eens op te geven dat *Leuven*
+in *Vlaams-Brabant* ligt. Het kan natuurlijk ook geen kwaad. Zoeken op *gemeente*,
+*deelgemeente* en *straat* tegelijk kan wel verwarrend zijn. Stel dat je zoekt 
+naar *gemeente=Knokke-Heist*, *deelgemeente=Ramskapelle* en *straat=Lippenslaan*,
+dan zal je niets vinden. Je zoekt dan namelijk naar alles dat zowel in Ramskapelle
+als de Lippenslaan ligt, iets wat niet kan. In de praktijk zal je dus ofwel op 
+*gemeente* en *deelgemeente* zoeken, ofwel op *gemeente* en *straat*.
+
+
+```{index} thesaurus
 ```
 
 ## Thesauri
@@ -240,8 +287,7 @@ thesaurusboom staat, hoe meer resultaten je zult vinden. Er zijn weinig
 *kathedralen* in Vlaanderen, maar veel *religieuze gebouwen en complexen*.
 
 Dit maakt van een thesaurus een heel krachtig zoekinstrument. Het is niet
-enkel een platte lijst van zoektermen waar je niet van kan afwijken, maar
-de zoektermen hebben ook nog eens inherente relaties die maken dat je 
-zoekactie veel intuïtievere resultaten oplevert dan wanneer je zonder 
-thesaurus zou werken.
-
+enkel een platte lijst van zoektermen die je helpt gerichte en zinvolle
+vragen te stellen, maar de zoektermen hebben ook nog eens inherente relaties 
+die maken dat je zoekactie veel intuïtievere resultaten oplevert dan wanneer 
+je zonder thesaurus zou werken.

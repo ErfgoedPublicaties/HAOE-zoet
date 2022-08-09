@@ -49,6 +49,9 @@ grijstinten](geoportaal_westerkwartier_oostende.png)
 
 *Onroerend erfgoed in het Westerkwartier te Oostende op het Geoportaal*
 
+```{index} geoportaal
+```
+
 **Het Geoportaal** Indien je voornamelijk op zoek bent naar erfgoed op een
 specifieke, geografische locatie, dan is het
 [Geoportaal](https://geo.onroerenderfgoed.be) je beste keus. Deze toepassing,

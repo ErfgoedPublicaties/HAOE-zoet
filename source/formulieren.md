@@ -87,6 +87,9 @@ je als gebruiker niet te lang wil wachten op alle zoekresultaten, worden deze
 gepagineerd weergegeven. Je krijgt dus de eerste 10 of 20 resultaten te
 zien en kunt verder bladeren naar de volgende pagina met resultaten.
 
+```{index} sorteren, sorteervolgorde
+```
+
 Bij de meeste zoekformulieren in het mogelijk te kiezen in welke **sorteervolgorde** de
 resultaten aan je gepresenteerd worden. Er is steeds een standaardvolgorde
 voorzien, maar vaak is het nuttig om deze aan te passen. Typische kenmerken
@@ -188,6 +191,9 @@ sorteren op relevantie, naam of op locatie. Je kan de resultaten doorbladeren en
 zo alles bekijken wat de toepassing gevonden heeft voor je.
 
 ## Facetted Search. Een alternatief zoekformulier.
+
+```{index} facetted search
+```
 
 ![Het zoekformulier voor afbeeldingen in de beeldbank onroerend erfgoed](beeldbank_zoeken.png)
 

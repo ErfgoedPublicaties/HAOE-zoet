@@ -6,7 +6,8 @@ Deze handleiding legt uit hoe je het beste kunt zoeken in de
 informatiesystemen van het [agentschap Onroerend
 Erfgoed](https://www.onroerenderfgoed.be). De handleiding vertrekt van algemene
 principes die geldig zijn voor de meeste toepassingen en vult deze aan met
-gedetailleerde informatie per toepassing.
+gedetailleerde informatie per toepassing. Ben je op zoek naar een specifiek
+onderwerp, raadpleeg dan {ref}`genindex` voor meer info.
 
 ## Citeren van deze handleiding
 
