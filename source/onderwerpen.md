@@ -197,8 +197,9 @@ wil zoeken naar iets in *Leuven*, hoef je niet nog eens op te geven dat *Leuven*
 in *Vlaams-Brabant* ligt. Het kan natuurlijk ook geen kwaad. Zoeken op *gemeente*,
 *deelgemeente* en *straat* tegelijk kan wel verwarrend zijn. Stel dat je zoekt 
 naar *gemeente=Knokke-Heist*, *deelgemeente=Ramskapelle* en *straat=Lippenslaan*,
-dan zal je niets vinden. Je zoekt dan namelijk naar alles dat zowel in Ramskapelle
-als de Lippenslaan ligt, iets wat niet kan. In de praktijk zal je dus ofwel op 
+dan zal je niets vinden. Je zoekt dan namelijk naar alles dat zowel in de deelgemeente 
+Ramskapelle als de Lippenslaan ligt, iets wat niet kan want de Lippenslaan ligt
+volledig in de deelgemeente Knokke. In de praktijk zal je dus ofwel op 
 *gemeente* en *deelgemeente* zoeken, ofwel op *gemeente* en *straat*.
 
 
@@ -220,15 +221,17 @@ thesauri die Onroerend Erfgoed publiceert raadplegen. Elke thesaurus bestaat
 uit een hiërarchische lijst van concepten, elk met hun definitie en één of 
 meerdere labels. Indien een concept meerdere labels heeft, dan is er altijd exact 
 één label dat de voorkeur geniet voor een bepaalde taal. Thesauri kunnen dus 
-meertalig zijn. *Lanen* is ingesteld als een alternatieve naam voor [*dreven*](https://thesaurus.onroerenderfgoed.be/conceptschemes/ERFGOEDTYPES/c/128) 
-in het Nederlands.
+meertalig zijn. Zo is *Lanen* ingesteld als een alternatieve naam voor
+[*dreven*](https://thesaurus.onroerenderfgoed.be/conceptschemes/ERFGOEDTYPES/c/128) 
+in het Nederlands. We geven dus aan dat lanen en dreven hetzelfde zijn en dat we de
+dreven verkiezen boven de term lanen.
 
 ![De hiërarchie van dreven in de thesaurus van erfgoedtypes](thesaurus_dreven_boom.png)
 
 *De hiërarchie van dreven in de [thesaurus van erfgoedtypes](https://thesaurus.onroerenderfgoed.be/conceptschemes/ERFGOEDTYPES)*
 
-Elk concept heeft relaties met andere concepten. Door die relaties wordt er
-in de eerste plaats een hiërarchie gemaakt die aangeeft dat *dreven* een 
+Elk concept heeft relaties met andere concepten. Die relaties creeëren 
+een hiërarchie die aangeeft dat *dreven* een 
 soort *wegen* zijn, ingedeeld op basis van *vorm*, die dienen voor *landverkeer* 
 en eigenlijk onder *infrastructuur* vallen. Naast de hiërarchische relaties,
 zijn er soms ook lossere relaties. Zo kunnen we lezen dat [*abdijen*](https://id.erfgoed.net/thesauri/erfgoedtypes/4)
@@ -242,7 +245,7 @@ Er valt nog héél wat te vertellen over thesauri, maar we willen ons nu vooral
 toespitsen op hoe je ze tijdens een zoekactie kunt gebruiken. Op een
 zoekformulier zien ze er niet meteen heel erg anders uit dan gelijk welk
 andere keuzelijst, toch zijn ze veel krachtiger. Je hebt twee manieren om
-een concept te selecteren waarmee je wens te zoeken. Je kubt iets intikken 
+een concept te selecteren waarmee je wenst te zoeken. Je kunt iets intikken 
 in het zoekveld. Je zoekterm wordt dan in de thesaurus gezocht en de 
 resultaten worden getoond. Indien ik dus *abd* intik, dan zie ik dat ik 
 zou kunnen zoeken naar *abdijenkerken*, *abdijhoeven*, *onderdelen van kloosters
@@ -250,31 +253,35 @@ en abdijen*, *abdijen* of *abdijdomeinen*. Dit werkt vooral goed als ik
 al min of meer weet wat ik zoek. Deze zoekfunctie houdt zelfs rekening met
 de alternatieve labels van concepten. Als ik *lanen* intik, dan krijg ik het 
 concept *dreven* ook te zien omdat we in onze thesaurus hebben aangegeven dat 
-*lanen* een niet-voorkeursnaam zijn voor *dreven*. Indien ik niet meteen 
+*lanen* een niet-voorkeursnaam is voor *dreven*. Indien ik niet meteen 
 de benaming ken voor het concept dat ik zoek, dan kan ik de volledige
 thesaurus doorbladeren. Daarvoor klik ik op het uiklapicoontje. Dan zie je alle
-topconcepten uit de thesaurus, die je met het plus-knopje steeds verder
-kunt openklappen. Zo kan je klikken op *gebouwen en structuren*, gevolgd 
-door *religieuze gebouwen en complexen* om ook weer bij *abdijen* uit
+topconcepten (concepten zonder bovenliggend concept) uit de thesaurus, 
+die je met het plus-knopje steeds verder kunt openklappen. Zo kan je 
+klikken op *gebouwen en structuren*, gevolgd door 
+*religieuze gebouwen en complexen* om ook weer bij *abdijen* uit
 te komen. Indien je dan op *zoeken* klikt, krijg je alle *abdijen* in de 
 inventaris Onroerend Erfgoed te zien. 
 
 Zoeken naar *abddijen* bij de erfgoedobjecten van de inventaris, komt
 neer op zoeken naar [alle erfgoedobjecten waaraan het concept *abdijen*
 is toegekend](https://inventaris.onroerenderfgoed.be/erfgoedobjecten?typologie=4). 
-Simpel, omdat *abdijen* in onze thesaurus boom een blad vormt. Mocht 
-de thesaurus een boom zijn, dan zitten de *abijden* op het einde van een tak.
-Er zijn geen specifiekere vormen van *abdijen*. Echter, bij de 
-[*kerken*](https://id.erfgoed.net/thesauri/erfgoedtypes/1005) het anders. Onder
-kerken zitten *katholieke*, *protestantse* en *orthodoxe kerken*. En op hun
-kennen die ook weer specifiekere vormen. Zo zijn er bij de *katholieke kerken*
-momenteel 9 subtypes, zoals *abdijkerken, *kloosterken*, *kathedralen* 
+Simpel, omdat *abdijen* in onze thesaurus boom een blad vormt. Je kunt een
+thesaurus zien als een boom waarbij de thesaurus zelf de stam vormt. De 
+voornaamste concepten in die thesaurus vormen de takken. Elk van die takken kan
+op zich weer takken hebben. Een concept dat geen kleinere concepten meer heeft
+noemen we een blad. In deze voorstelling zitten de *abijden* op het einde 
+van een tak en vormen ze dus een blad. Er zijn geen specifiekere vormen 
+van *abdijen*. Echter, bij de [*kerken*](https://id.erfgoed.net/thesauri/erfgoedtypes/1005) 
+is het anders. Onder kerken zitten *katholieke*, *protestantse* en 
+*orthodoxe kerken*. En op hun kennen die ook weer specifiekere vormen. Zo 
+zijn er bij de *katholieke kerken* momenteel 9 subtypes, zoals *abdijkerken, *kloosterken*, *kathedralen* 
 en *parochiekerken*. Onze thesaurus maakt het mogelijk om zowel op een 
 specifiek type zoals *kathedralen* te zoeken, maar ook op een verzamelterm
 zoals *katholieke kerken*, *kerken* of zelfs het zeer algemene 
 *religieuze gebouwen en complexen*. Telkens je in het zoekformulier zoekt
-doormiddel van een thesaurus, zal de thesaurus jouw zoekterm analyseren 
-en indien nodig omzetten naar een verzameling van termen. Indien je zoekt
+door middel van een thesaurus, zal de thesaurus jouw zoekterm analyseren 
+en indien nodig omzetten naar een verzameling van concepten. Indien je zoekt
 op *kathedralen*, dan zijn er geen specifiekere concepten en zoek je dus
 exact op *kathedralen*. Indien je zoekt op *katholieke kerken*, dan zoek je
 naar alle erfgoedobjecten waaraan één van die 9 subtypes toegekend is of 
@@ -284,10 +291,93 @@ je naar alle erfgoedobjecten waaraan *katholieke kerken*, *orthodoxe kerken*
 , *protestantste kerken* of één van hun subtypes of het algemene *kerken*
 toegekend zijn. Dat maakt natuurlijk dat hoe hoger je zoekterm in de 
 thesaurusboom staat, hoe meer resultaten je zult vinden. Er zijn weinig 
-*kathedralen* in Vlaanderen, maar veel *religieuze gebouwen en complexen*.
+*kathedralen* in Vlaanderen, maar wel veel *religieuze gebouwen en complexen*.
 
 Dit maakt van een thesaurus een heel krachtig zoekinstrument. Het is niet
 enkel een platte lijst van zoektermen die je helpt gerichte en zinvolle
 vragen te stellen, maar de zoektermen hebben ook nog eens inherente relaties 
-die maken dat je zoekactie veel intuïtievere resultaten oplevert dan wanneer 
-je zonder thesaurus zou werken.
+die maken dat je zoekactie veel intuïtievere resultaten oplevert. Ze bevatten 
+dus heel wat kennis over erfgoed en helpen je gerichter zoeken. 
+
+### De verschillende thesauri
+
+Het agentschap gebruikt meerdere thesauri, in de SKOS terminologie ook gekend als 
+ConceptSchemes. Elke thesaurus of schema is een geordende verzameling van 
+concepten met een duidelijk afgebakend profiel. Ze hebben allemaal een
+eigen doel en er wordt nauw toegezien op de inhoud van elke thesaurus. De 
+meeste thesauri worden gebruikt in de 
+[inventaris onroerend erfgoed](https://inventaris.onroerenderfgoed.be) in 
+de datasets van erfgoedobjecten, aanduidingsobjecten of waarnemingen.
+
+De thesaurus van [erfgoedtypes](https://id.erfgoed.net/thesauri/erfgoedtypes)
+is onze grootste en waarschijnlijk bekendste thesaurus. Ze bevat een lijst 
+van XXXX types van erfgoed, soorten erfgoed zoals *kerken*, *fazantenhokken* 
+of *grafheuvels*. De lijst van types werd opgesteld vanuit functioneel
+in plaats van een vormelijk oogpunt. Je vindt er dus wel *katholieke kerken* 
+(een functie), maar geen *hallekerken* (een vorm).
+
+De thesaurus van [dateringen](https://id.erfgoed.net/thesauri/dateringen) 
+bevat een lijst van periodes die relevant zijn voor onroerend erfgoed. 
+Enerzijds een chronologie van de menselijke aanwezigheid in Vlaanderen, 
+van het *Paleolithicum* tot de *20ste eeuw*. Anderzijds een lijst van 
+geologische dateringen die vooral relevant zijn voor archeologisch en 
+landschappelijk erfgoed.
+
+De thesaurus van [stijlen en culturen](https://id.erfgoed.net/thesauri/stijlen_en_culturen)
+bevat twee grote collecties van termen. Ten eerste zijn er de bouwkundige
+stijlen zoals *barok*, *gotiek*, *art deco*. Ten tweede zijn er de culturen
+zoals *Hallstatt* of *Acheuleaan* die vooral in de archeologie gebruikt 
+worden. Beide groepen bakenen hebbe gemeen dat ze vormelijke kenmerken
+afbakenen die samen voorkomen in ruimte en tijd.
+
+De thesaurus van [soorten](https://id.erfgoed.net/thesauri/soorten) is 
+een lijst van soorten flora, meer specifiek bomen en struiken, die 
+voorkomen in Vlaanderen (al dan niet van nature). Deze wordt gebruikt
+om houtige beplantingen met erfgoedwaarde te identificeren.
+
+De thesaurus van [materialen](https://id.erfgoed.net/thesari/materialen)
+omvat types van bouw- en andere materialen zoals *baksteen* of 
+*wommersomkwartsiet*. Termen uit deze thesaurus worden relatief weinig 
+toegekend. Bij bouwkundig erfgoed worden er nooit materiaaltypes toegekend 
+aangezien dit in Vlaanderen zo goed als altijd baksteen zou zijn.
+
+De [gebeurtenistypes](https://id.erfgoed.net/thesauri/gebeurtenistypes)
+is een lijst die types van onderzoek bevat. Je kunt er nagaan wat *opgravingen*
+zijn of wat een *bureauonderzoek* is. Ze biedt dus een staalkaart van 
+soorten onderzoeken die worden uitgevoerd in op onroerend erfgoed 
+in Vlaanderen. Deze worden gekoppeld aan de dataset van gebeurtenissen in 
+de inventaris, zodat je kunt zoeken gebeurtenissen die een opgraving of een 
+bureauonderzoek voorstellen.
+
+De thesaurus van [besluit types](https://id.erfgoed.net/thesauri/besluit_types)
+bevat een lijst met types van besluiten die worden uitgevaardig 
+over onroerend erfgoed. Je vindt er zaken zoals *beschermingsbesluiten*, 
+*opheffingsbesluiten* en *vaststellingsbesluiten*, maar ook 
+*koninklijke besluiten* of *besluiten administrateur-generaal*. Deze thesaurus
+wordt gebruikt in de besluitendatabak zodat je snel besluiten van bepaalde types 
+kunt terugvinden.
+
+De [waarde types](https://id.erfgoed.net/thesauri/waarde_types) thesaurus
+is een kleine thesaurus die de waarden waaronder beschermd wordt in de 
+huidige en de vroegere onroerend erfgoed wetgevingen oplijst. Je kan er 
+waarden vinden die vandaag nog in gebruik zijn zoals de *historische waarde* 
+of de *esthetische waarde*, maar ook waarden die niet meer toegekend 
+worden zoals de *sociaal-culturele waarde*. Ze worden gebruikt bij de 
+aanduidingsobjecten van de inventaris om aan te geven omwille van welke 
+waarde erfgoed belangrijk wordt geacht.
+
+De [aanduidingstypes](https://id.erfgoed.net/thesauri/aanduidingstypes)
+is een lijst van alle gangbare statuten van onroerend erfgoed. Het zijn 
+de manieren waarop we erfgoed juridisch verankeren. Voorbeelden zijn 
+*beschermd monument*, *beschermd cultuurhistorisch landschap*,
+*erfgoedlandschap*, *beschermde archeologische site* of 
+*gebied geen archeologie*. Deze thesaurus wordt gebruikt om de aanduidingsobjecten
+te typeren. Dit stelt ons in staat om op het zoekformulier voor aanduidingen
+een onderscheid te maken tussen beschermd en vastgesteld erfgoed.
+
+De [brontypes](https://id.erfgoed.net/thesauri/brontypes) is een korte 
+lijst van soorten bronnen die in de waarnemingen databank gebruikt 
+worden zoals *literatuur* of *archief*.
+
+
+
